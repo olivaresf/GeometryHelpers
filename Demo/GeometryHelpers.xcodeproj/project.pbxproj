@@ -19,7 +19,18 @@
 		49A6F741264D8EB6002EB98D /* UIView+GeometryHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A6F740264D8EB6002EB98D /* UIView+GeometryHelpers.swift */; };
 		49A6F743264D9ACC002EB98D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 49A6F742264D9ACC002EB98D /* README.md */; };
 		49A6F745264D9B1F002EB98D /* CGSize+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A6F744264D9B1F002EB98D /* CGSize+Helper.swift */; };
+		9BB79E832664AB8500D912D8 /* GeometryHelpersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB79E822664AB8500D912D8 /* GeometryHelpersTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9BB79E852664AB8500D912D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 49A6F718264D8DFA002EB98D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 49A6F71F264D8DFB002EB98D;
+			remoteInfo = GeometryHelpers;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		49A6F720264D8DFB002EB98D /* GeometryHelpers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeometryHelpers.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,10 +47,20 @@
 		49A6F740264D8EB6002EB98D /* UIView+GeometryHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+GeometryHelpers.swift"; sourceTree = "<group>"; };
 		49A6F742264D9ACC002EB98D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		49A6F744264D9B1F002EB98D /* CGSize+Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGSize+Helper.swift"; sourceTree = "<group>"; };
+		9BB79E802664AB8500D912D8 /* GeometryHelpersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeometryHelpersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BB79E822664AB8500D912D8 /* GeometryHelpersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryHelpersTests.swift; sourceTree = "<group>"; };
+		9BB79E842664AB8500D912D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		49A6F71D264D8DFB002EB98D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BB79E7D2664AB8500D912D8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -55,6 +76,7 @@
 				49A6F742264D9ACC002EB98D /* README.md */,
 				49A6F737264D8E24002EB98D /* Sources */,
 				49A6F722264D8DFB002EB98D /* GeometryHelpers */,
+				9BB79E812664AB8500D912D8 /* GeometryHelpersTests */,
 				49A6F721264D8DFB002EB98D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -63,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				49A6F720264D8DFB002EB98D /* GeometryHelpers.app */,
+				9BB79E802664AB8500D912D8 /* GeometryHelpersTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,6 +117,15 @@
 			path = ../Sources;
 			sourceTree = "<group>";
 		};
+		9BB79E812664AB8500D912D8 /* GeometryHelpersTests */ = {
+			isa = PBXGroup;
+			children = (
+				9BB79E822664AB8500D912D8 /* GeometryHelpersTests.swift */,
+				9BB79E842664AB8500D912D8 /* Info.plist */,
+			);
+			path = GeometryHelpersTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -114,17 +146,39 @@
 			productReference = 49A6F720264D8DFB002EB98D /* GeometryHelpers.app */;
 			productType = "com.apple.product-type.application";
 		};
+		9BB79E7F2664AB8500D912D8 /* GeometryHelpersTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BB79E872664AB8500D912D8 /* Build configuration list for PBXNativeTarget "GeometryHelpersTests" */;
+			buildPhases = (
+				9BB79E7C2664AB8500D912D8 /* Sources */,
+				9BB79E7D2664AB8500D912D8 /* Frameworks */,
+				9BB79E7E2664AB8500D912D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9BB79E862664AB8500D912D8 /* PBXTargetDependency */,
+			);
+			name = GeometryHelpersTests;
+			productName = GeometryHelpersTests;
+			productReference = 9BB79E802664AB8500D912D8 /* GeometryHelpersTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		49A6F718264D8DFA002EB98D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1250;
+				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
 					49A6F71F264D8DFB002EB98D = {
 						CreatedOnToolsVersion = 12.5;
+					};
+					9BB79E7F2664AB8500D912D8 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 49A6F71F264D8DFB002EB98D;
 					};
 				};
 			};
@@ -142,6 +196,7 @@
 			projectRoot = "";
 			targets = (
 				49A6F71F264D8DFB002EB98D /* GeometryHelpers */,
+				9BB79E7F2664AB8500D912D8 /* GeometryHelpersTests */,
 			);
 		};
 /* End PBXProject section */
@@ -155,6 +210,13 @@
 				49A6F72D264D8DFB002EB98D /* Assets.xcassets in Resources */,
 				49A6F743264D9ACC002EB98D /* README.md in Resources */,
 				49A6F72B264D8DFB002EB98D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BB79E7E2664AB8500D912D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,7 +238,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9BB79E7C2664AB8500D912D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BB79E832664AB8500D912D8 /* GeometryHelpersTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9BB79E862664AB8500D912D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 49A6F71F264D8DFB002EB98D /* GeometryHelpers */;
+			targetProxy = 9BB79E852664AB8500D912D8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		49A6F729264D8DFB002EB98D /* Main.storyboard */ = {
@@ -320,8 +398,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = P4CZV2X6XB;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = GeometryHelpers/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -338,17 +417,61 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = P4CZV2X6XB;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = GeometryHelpers/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.aveapps.test.GeometryHelpers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9BB79E882664AB8500D912D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7Q28B2MC2C;
+				INFOPLIST_FILE = GeometryHelpersTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = humans.mx.GeometryHelpersTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GeometryHelpers.app/GeometryHelpers";
+			};
+			name = Debug;
+		};
+		9BB79E892664AB8500D912D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7Q28B2MC2C;
+				INFOPLIST_FILE = GeometryHelpersTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = humans.mx.GeometryHelpersTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GeometryHelpers.app/GeometryHelpers";
 			};
 			name = Release;
 		};
@@ -369,6 +492,15 @@
 			buildConfigurations = (
 				49A6F735264D8DFB002EB98D /* Debug */,
 				49A6F736264D8DFB002EB98D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9BB79E872664AB8500D912D8 /* Build configuration list for PBXNativeTarget "GeometryHelpersTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BB79E882664AB8500D912D8 /* Debug */,
+				9BB79E892664AB8500D912D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
